@@ -20,7 +20,7 @@ export const changeActiveBtn = (dataUse) => {
     
 }
 
-const stop = () => {
+export const stop = () => {
     clearTimeout(state.timerId);//остановка таймера
     state.isActive = false;//выключать активность
     btnStart.textContent = 'Старт';//писать слово старт
